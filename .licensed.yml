@@ -1,0 +1,25 @@
+sources:
+  go: true
+source_path: .
+cache_path: .licenses/
+allowed:
+  - mit
+  - apache-2.0
+  - bsd-2-clause
+  - bsd-3-clause
+  - mpl-2.0
+reviewed:
+  go:
+    # BSD 3 clause
+    - google.golang.org/protobuf/**/*
+    - golang.org/x/text/**/*
+    - golang.org/x/net/**/*
+    - golang.org/x/mod/**/*
+    - golang.org/x/crypto/**/*
+    - github.com/google/go-cmp/**/*
+    # Apache 2.0 + libyaml (MIT)
+    - github.com/zclconf/go-cty-yaml
+    # MIT + Unicode table generation (Apache 2.0) + Grapheme break data (Unicode)
+    - github.com/apparentlymart/go-textseg/**/*
+    # MIT for non-Windows, Apache 2.0 for Windows
+    - github.com/bgentry/speakeasy
